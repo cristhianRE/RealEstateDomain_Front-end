@@ -1,26 +1,58 @@
 [
   {
     "Id": 1,
+    "SellRent": 1,
     "Name": "Birla House",
     "Type": "House",
-    "Price": 12000
+    "Price": 12000,
+    "Image": "prop-1"
   },
   {
     "Id": 2,
+    "SellRent": 2,
     "Name": "Erose Villa",
     "Type": "House",
-    "Price": 10000
+    "Price": 10000,
+    "Image": "prop-2"
   },
   {
     "Id": 3,
+    "SellRent": 1,
     "Name": "Pearl White",
     "Type": "House",
-    "Price": 17000
+    "Price": 17000,
+    "Image": "prop-3"
   },
   {
     "Id": 4,
+    "SellRent": 2,
     "Name": "Macro Home",
     "Type": "House",
-    "Price": 19000
+    "Price": 19000,
+    "Image": "prop-4"
+  },
+  {
+    "Id": 5,
+    "SellRent": 1,
+    "Name": "Hills Style",
+    "Type": "House",
+    "Price": 145600,
+    "Image": "prop-5"
+  },
+  {
+    "Id": 6,
+    "SellRent": 2,
+    "Name": "Macro Home",
+    "Type": "House",
+    "Price": 17800,
+    "Image": "prop-6"
+  },
+  {
+    "Id": 7,
+    "SellRent": 2,
+    "Name": "Macro Home",
+    "Type": "House",
+    "Price": 17780,
+    "Image": ""
   }
 ]
