@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { Routes, RouterModule } from '@angular/router'
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
 ]
 
 @NgModule({
-  declarations /*of child components*/: [
+  declarations /* of child components */: [
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
@@ -28,9 +29,10 @@ const appRoutes: Routes = [
     AddPropertyComponent,
     PropertyDetailComponent
   ],
-  imports: [
+  imports /* of external modules */: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
 
@@ -38,6 +40,8 @@ const appRoutes: Routes = [
   providers: [
     HousingService
   ],
+
+  // Declaration of root component
   bootstrap: [
     AppComponent
   ]

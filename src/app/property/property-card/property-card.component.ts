@@ -10,4 +10,9 @@ export class PropertyCardComponent {
 
   @Input() property: IProperty
 
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
 }

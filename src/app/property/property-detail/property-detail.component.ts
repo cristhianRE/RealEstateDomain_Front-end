@@ -27,5 +27,4 @@ export class PropertyDetailComponent implements OnInit {
     this.propertyId += 1;
     this.router.navigate(['property-detail', this.propertyId]);
   }
-
 }
