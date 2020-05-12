@@ -15,8 +15,8 @@ export class PropertyDetailComponent implements OnInit {
   ngOnInit() {
     this.propertyId = Number(this.route.snapshot.params['id']);
 
+    // Reload propertyId value when params value changed on the route of this component
     this.route.params.subscribe(
-
       (params) => {
         this.propertyId = Number(params['id'])
       }
