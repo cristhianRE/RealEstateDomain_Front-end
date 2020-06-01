@@ -14,6 +14,7 @@ import { PropertyDetailComponent } from './property/property-detail/property-det
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { UserService } from './services/user.service';
+import { AlertifyService } from './services/alertify.service';
 
 /* Route map */
 const appRoutes: Routes = [
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
   // Declarations of injectables services
   providers: [
     HousingService,
-    UserService
+    UserService,
+    AlertifyService
   ],
 
   // Declaration of root component
