@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 import { AppComponent } from './app.component';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
@@ -18,6 +20,7 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
 import { UserService } from './services/user.service';
 import { AlertifyService } from './services/alertify.service';
 import { AuthService } from './services/auth.service';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 /* Route map */
 const appRoutes: Routes = [
@@ -50,7 +53,10 @@ const appRoutes: Routes = [
     ReactiveFormsModule, // Reactive Form
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot(),
+    BsDatepickerModule.forRoot()
   ],
 
   // Declarations of injectables services
